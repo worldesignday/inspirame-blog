@@ -1,0 +1,47 @@
+
+// -----------------------------------------------------------------------------
+// This file contains custom scss page.
+// -----------------------------------------------------------------------------
+.bg-light{
+	background-color: var(--bs-light) !important;
+}
+.pt-45{
+	padding-top: $size-45;
+}
+.pb-50{
+	padding-bottom: $size-50;
+}
+.py-30{
+	padding: $size-45 0;
+}
+.text-before-none{
+	&::before{
+		content: '';
+		background-color: transparent !important;
+	}
+}
+
+.entry{
+	&-productos{
+		&--title{
+			color:var(--bs-primary-dark);
+		}
+		.card{
+			&-title{
+				font-size: $size-22;
+				color:var(--bs-primary-dark);
+				line-height: 1.1;
+			}
+			&-subtitle{
+				text-transform: uppercase;
+				font-size: $size-12;
+				color:var(--bs-primary);
+				line-height: 1;
+			}
+			&-text{
+				font-size: $size-14;
+				color:var(--bs-gray-dark);
+			}
+		}
+	}
+}
