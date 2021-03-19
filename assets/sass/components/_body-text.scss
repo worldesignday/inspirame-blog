@@ -110,6 +110,9 @@
 			color: var(--bs-dark);
 			font-weight: 400;
 			padding-bottom: $size-24;
+			@media (max-width: $break-md) {
+				font-weight: 600;
+			}
 		}
 		p{
 			padding-bottom: $size-24;
