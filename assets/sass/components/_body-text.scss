@@ -16,6 +16,10 @@
 			padding-right:10rem;
 
 		}
+		@media (max-width: $break-md) {
+			font-size: $size-40;
+
+		}
 	}
 	&-autor{
 		font-size: $size-14;
@@ -86,6 +90,7 @@
 		}
 	}
 	&-resumen{
+		font-size: $size-18;
 		color: var(--bs-primary-dark);
 		margin-bottom: 0;
 	}
@@ -104,6 +109,10 @@
 		}
 		p{
 			padding-bottom: $size-24;
+			@media (max-width: $break-md) {
+				margin-bottom: 0;
+
+			}
 		}
 		a{
 			font-weight: 400;
