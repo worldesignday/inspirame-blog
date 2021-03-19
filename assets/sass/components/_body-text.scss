@@ -99,6 +99,10 @@
 		color: var(--bs-gray-dark);
 		font-weight:300;
 		line-height: 1.6;
+		@media (max-width: $break-md) {
+			font-weight:400;
+
+		}
 		strong{
 			font-weight:500;
 		}
@@ -111,7 +115,6 @@
 			padding-bottom: $size-24;
 			@media (max-width: $break-md) {
 				margin-bottom: 0;
-
 			}
 		}
 		a{
