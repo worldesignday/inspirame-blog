@@ -2,30 +2,57 @@
 // -----------------------------------------------------------------------------
 // This file contains custom scss swiper.
 // -----------------------------------------------------------------------------
-.swiper-container,
- .swiper-container2{
-	width: 100%;
-	height: 100%;
-	margin-left: auto;
-	margin-right: auto;
+div[class*="entry-"]{
+	.swiper-container,
+	 .swiper-container2{
+		width: 100%;
+		height: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		@media (min-width: $break-md) {
+			overflow: initial;
+		}
+		.swiper-slide {
+		text-align: center;
+		font-size: 18px;
+		background: #fff;
+			@media (max-width: $break-md) {
+				overflow: initial;
+				width:90% !important;
+
+			}
+		}
+	}
+	.swiper-button-next,
+	.swiper-button-prev{
+		background:var(--bs-white);
+		border:1px solid $color-negro-20;
+		width: calc(var(--swiper-navigation-size)/ 44 * 44) !important;
+		border-radius: 2px;
+		top:45%;
+		&:after{
+			top: -12px;
+			position: absolute;
+		}
+	}
+	.swiper-button-next{
+		right: -10px;
+		&:after{
+			content: url('/assets/images/icons/icon-next-slide.svg') !important;
+		}
+		@media (max-width: $break-md) {
+			display: none;
+		}
+	}
+	.swiper-button-prev{
+		left: -10px;
+		&:after{
+			content: url('/assets/images/icons/icon-prev-slide.svg') !important;
+		}
+		@media (max-width: $break-md) {
+			display: none;
+		}
+	}
 }
-.swiper-container,
-.swiper-container2{
-	.swiper-slide {
-	text-align: center;
-	font-size: 18px;
-	background: #fff;
-	width: 40%;
-	}
-	.swiper-slide:nth-child(2n) {
-	  width: 40%;
-	}
-
-	.swiper-slide:nth-child(3n) {
-	  width: 20%;
-	}
-
-}
-
 
 

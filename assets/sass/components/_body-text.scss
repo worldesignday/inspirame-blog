@@ -166,10 +166,13 @@
 		}
 		figcaption.blockquote-footer{
 			padding-left:3.7rem;
+			display: block;
 		}
 		.blockquote-footer{
 			font-size:$size-14;
 			padding-bottom: $size-24;
+			display: block;
+			margin-top: 1rem;
 			&::before{
 				color:var(--bs-primary);
 			}
