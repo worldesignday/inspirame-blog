@@ -8,35 +8,36 @@ extends ../page-templates/tpl_page.pug
 block title
     title Inspirame - Corona
 block contenido
-    .container
-        .row.justify-content-center
-            .col-xl-7.col-lg-10.mx-auto
-                header.entry-header.alignwide.pt-45
-                    h1.entry-title
-                        |Un hogar ordenado, mejora tu vida
-                .row.g-0.border-bottom.pb-4
-                    .col-md-6.g-0
-                        .entry-autor
-                            span Por: 
-                            |Camila Hadad
-                        .entry-rol
-                            |Corona Insírame
-                    .col-md-6.text-end.g-0.d-none.d-md-block
-                        .entry-share
-                            |Comparte este contenido en:
-                .row.pt-2
-                    .col-12.d-inline-flex.align-items-center
-                        .entry-date.border-end.pe-4
-                            |Febrero 20,2021
-                        .entry-tags.d-inline-flex.align-items-center
-                            span.d-inline-flex.ps-3 En: 
-                            nav.nav(aria-label='Secondary navigation')
-                                a.nav-link(href='#') Wallpapers
-                                a.nav-link(href='#') Nature
-                .row
-                    .col-12
-                        p.entry-resumen.pt-5 Hoy los hilos se entrelazan y se crea un mensaje comunal que nos identifica esta es la entradilla  o resumen del articulo y se crea un mensaje comunal que nos identifica.                         
-    .entry-content
+    .entry-content-header.bg-white
+        .container
+            .row.justify-content-center
+                .col-xl-7.col-lg-10.mx-auto
+                    header.entry-header.alignwide.pt-45
+                        h1.entry-title
+                            |Un hogar ordenado, mejora tu vida
+                    .row.g-0.border-bottom.pb-4
+                        .col-md-6.g-0
+                            .entry-autor
+                                span Por: 
+                                |Camila Hadad
+                            .entry-rol
+                                |Corona Insírame
+                        .col-md-6.text-end.g-0.d-none.d-md-block
+                            .entry-share
+                                |Comparte este contenido en:
+                    .row.pt-2
+                        .col-12.d-inline-flex.align-items-center
+                            .entry-date.border-end.pe-4
+                                |Febrero 20,2021
+                            .entry-tags.d-inline-flex.align-items-center
+                                span.d-inline-flex.ps-3 En: 
+                                nav.nav(aria-label='Secondary navigation')
+                                    a.nav-link(href='#') Wallpapers
+                                    a.nav-link(href='#') Nature
+                    .row
+                        .col-12
+                            p.entry-resumen.pt-5 Hoy los hilos se entrelazan y se crea un mensaje comunal que nos identifica esta es la entradilla  o resumen del articulo y se crea un mensaje comunal que nos identifica.                         
+    .entry-content.bg-white
         .container
             .row.justify-content-center
                 .col-lg-11.mx-auto.text-center.py-30
@@ -108,13 +109,13 @@ block contenido
                             | Quidam officiis 
                             cite(title='Source Title') similique sea ei 
                     p Aquí, el material tiene el absoluto poder para ser el gran protagonista de los espacios sin necesidad de tener formas muy elaboradas, la simplicidad es clave para apreciar lo realmente importante. Espacios que no necesitan mucha decoración porque esta, está dentro de los pisos y paredes de los mismos; con uno o dos toques metalizados tendrás la combinación perfecta de colores naturales y brillantes creando ambientes realmente sofisticados. Lleva esta tendencia a tu hogar y lee más de esta tendencia en: <a href="">Génesis: tendencia neoclásica que lleva al origen.</a>
-                .col-xl-7.col-lg-10.mx-auto.border-top.pt-2.pb-5.justify-content-between.d-flex
+                .col-xl-7.col-lg-10.mx-auto.border-top.pt-2.pb-5.justify-content-between.d-sm-flex
                     .entry-tags.d-inline-flex.align-items-center
                         span.inline-block En: 
                         nav.nav(aria-label='Secondary navigation')
                             a.nav-link.text-before-none(href='#') Hogar
                             a.nav-link.text-before-none(href='#') Diseño
                             a.nav-link.text-before-none(href='#') Hogar
-                    .entry-share
+                    .entry-share.d-sm-block.mt-4.mt-sm-0
                             |Comparte este contenido en:
 

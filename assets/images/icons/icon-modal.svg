@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.128" height="18.844" viewBox="0 0 21.128 18.844">
+  <g id="Group_172" data-name="Group 172" transform="translate(-455.032 -4732.985)">
+    <g id="arrow-slide" transform="matrix(0.819, -0.574, 0.574, 0.819, 456.434, 4744.314)">
+      <path id="Path_2" data-name="Path 2" d="M1,1,4.579,4.579,1,8.158" transform="translate(13.201 -1.006)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+      <path id="Path_3" data-name="Path 3" d="M10.993,5.49l5.992.01" transform="translate(-1 -1.921)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+    </g>
+    <g id="arrow-slide-2" data-name="arrow-slide" transform="matrix(-0.819, 0.574, -0.574, -0.819, 468.077, 4745.187)">
+      <path id="Path_2-2" data-name="Path 2" d="M0,0,3.579,3.579,0,7.158" transform="translate(6.04 0)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+      <path id="Path_3-2" data-name="Path 3" d="M0,0H6.046" transform="translate(1.784 3.579)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.3"/>
+    </g>
+  </g>
+</svg>

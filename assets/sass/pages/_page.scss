@@ -3,15 +3,25 @@
 // This file contains custom scss page.
 // -----------------------------------------------------------------------------
 .entry{
-	&-productos{
+	&-productos,
+	&-relacionadas{
 		&--title{
 			color:var(--bs-primary-dark);
 		}
 		.card{
+			text-align: left;
 			&-title{
 				font-size: $size-22;
 				color:var(--bs-primary-dark);
 				line-height: 1.1;
+				a{
+					font-size: $size-22;
+					color:var(--bs-primary-dark);
+					line-height: 1.1;
+					&:hover{
+						text-decoration: none;
+					}
+				}
 			}
 			&-subtitle{
 				text-transform: uppercase;
@@ -23,6 +33,38 @@
 				font-size: $size-14;
 				color:var(--bs-gray-dark);
 			}
+			&-footer{
+				background-color: transparent;
+			}
+			img,
+			.card-body{
+				transition: all 0.3s ease-in-out;
+			}
+
 		}
 	}
+
+}
+@media (max-width: $break-md) {
+	.entry-tags{
+		+ .entry-share{
+			border-top:1px solid var(--bs-light-120);
+			padding-top: 1rem;
+		}
+	}
+}
+.entry-relacionadas{
+	.card{
+		&:hover{
+
+			.card-image img{
+				transform: scale(1.08);
+			}
+			.card-body{
+				margin-top: -5px;
+
+			}
+		}
+	}
+
 }

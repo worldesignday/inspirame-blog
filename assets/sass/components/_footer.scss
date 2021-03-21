@@ -1,0 +1,18 @@
+
+// -----------------------------------------------------------------------------
+// This file contains custom scss header.
+// -----------------------------------------------------------------------------
+.main{
+	@media (min-width: 768px){
+		margin-bottom: 340px;
+	}
+}
+footer{
+	@media (min-width: 768px){
+	    position: fixed !important;
+	    bottom: 0;
+	    left: 0;
+	    width: 100%;
+	    z-index: -1 !important;
+	}
+}

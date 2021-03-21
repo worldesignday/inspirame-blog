@@ -3,8 +3,7 @@
 // This file contains custom scss swiper.
 // -----------------------------------------------------------------------------
 div[class*="entry-"]{
-	.swiper-container,
-	 .swiper-container2{
+	.swiper-container{
 		width: 100%;
 		height: 100%;
 		margin-left: auto;
@@ -22,7 +21,39 @@ div[class*="entry-"]{
 
 			}
 		}
+		.swiper-button-next,
+		.swiper-button-prev{
+			background:var(--bs-white);
+			border:1px solid $color-negro-20;
+			width: calc(var(--swiper-navigation-size)/ 44 * 44) !important;
+			border-radius: 2px;
+			top:45%;
+			&:after{
+				top: -12px;
+				position: absolute;
+			}
+		}
+		.swiper-button-next{
+			right: -10px;
+			&:after{
+				content: url('/assets/images/icons/icon-next-slide.svg') !important;
+			}
+			@media (max-width: $break-md) {
+				display: none;
+			}
+		}
+		.swiper-button-prev{
+			left: -10px;
+			&:after{
+				content: url('/assets/images/icons/icon-prev-slide.svg') !important;
+			}
+			@media (max-width: $break-md) {
+				display: none;
+			}
+		}
 	}
+}
+.swiper-container-entradas{
 	.swiper-button-next,
 	.swiper-button-prev{
 		background:var(--bs-white);
@@ -36,7 +67,7 @@ div[class*="entry-"]{
 		}
 	}
 	.swiper-button-next{
-		right: -10px;
+		right: 0px;
 		&:after{
 			content: url('/assets/images/icons/icon-next-slide.svg') !important;
 		}
@@ -45,7 +76,7 @@ div[class*="entry-"]{
 		}
 	}
 	.swiper-button-prev{
-		left: -10px;
+		left: 0px;
 		&:after{
 			content: url('/assets/images/icons/icon-prev-slide.svg') !important;
 		}

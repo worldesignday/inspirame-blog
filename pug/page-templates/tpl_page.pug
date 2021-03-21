@@ -34,15 +34,29 @@ html(lang="es")
         block nabvar
         include ../template-parts/navbar.pug 
         // /.navbar
+        .main
   
-        //- body block content
-        article
-            block contenido
-            // /article
+            //- body block content
+            article
+                block contenido
+                // /article
 
-        block productos
-        include ../template-parts/productos-corona.pug
-        // /.entry-productos
+            block productos
+            include ../template-parts/productos-corona.pug
+            // /.entry-productos
+
+            block relacionados
+            include ../template-parts/entradas-relacionadas.pug
+            // /.entry-relacionados
+
+            block susccripcion
+            include ../template-parts/modal-suscripcion.pug
+            // /.entry-suscripcion
+        // /.main
+
+        block footer
+        include  ../template-parts/footer.pug
+        // /footer 
 
                 
         //- Page transitions js

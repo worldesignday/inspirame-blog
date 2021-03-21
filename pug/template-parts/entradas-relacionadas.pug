@@ -1,29 +1,35 @@
-.entry-relacionadas.pt-45.pb-50.position-relative
+section.entry-relacionadas.pt-45.pb-50.position-relative.bg-white
 	.container
 		.row
-			.col-xl-9.col-lg-10.mx-auto
+			.col-12.justify-content-between.d-sm-flex.mb-1
 				.entry-productos--title
-					h2.fw-normal Seguir leyendo
+					h2.fw-normal.mb-0 Seguir leyendo
+				a(href="" class="btn btn-outline-primary ") Ver todo
 		.row
-			.col-12.mx-auto
+			.col-12.d-overflow.position-relative.mt-4
 				// start .swiper-container
-				.swiper-container2
+				.swiper-container-entradas
 					.swiper-wrapper
 						.swiper-slide
 							.card
-								img(src="")
+								.card-image.d-overflow
+									picture
+										source(media="(min-width: 575.98px)" srcset="/assets/images/slide-1_w_470.jpg")
+										source(media="(max-width: 576px)" srcset="/assets/images/slide-1_w_375.jpg")
+										img(src="/assets/images/slide-1_w_375.jpg" alt="Descripción Imagen" class="img-fluid swiper-lazy")
+										.swiper-lazy-preloader
 								.card-body
 									.card-date
-										.entry-date
+										.entry-date.mb-2
 											|Febrero 20,2021
 									.card-title
-										|Impregna tus espacios de cultura siguiendo la tendencia armonía cultural
-									.card-autor
-										span Por:
-										|Camila Hadad
-								.card-footer
+										a(href="" class="stretched-link") Impregna tus espacios de cultura siguiendo la tendencia armonía cultural
+									.entry-autor
+										span Por: 
+											|Camila Hadad
+								.card-footer.justify-content-between.d-sm-flex
 									.entry-tags.d-inline-flex.align-items-center
-										span.inline-block.ps-3 En: 
+										span.inline-block En: 
 										nav.nav(aria-label='Secondary navigation')
 											a.nav-link(href='#') Hogar
 											a.nav-link(href='#') Diseño
@@ -33,41 +39,51 @@
 						// /.swiper-slide
 						.swiper-slide
 							.card
-								img(src="")
+								.card-image.d-overflow
+									picture
+										source(media="(min-width: 575.98px)" srcset="/assets/images/slide-2_w_470.jpg")
+										source(media="(max-width: 576px)" srcset="/assets/images/slide-2_w_375.jpg")
+										img(src="/assets/images/slide-2_w_470.jpg" alt="Descripción Imagen" class="img-fluid swiper-lazy")
+										.swiper-lazy-preloader
 								.card-body
 									.card-date
-										.entry-date
+										.entry-date.mb-2
 											|Febrero 20,2021
 									.card-title
-										|Impregna tus espacios de cultura siguiendo la tendencia armonía cultural
-									.card-autor
-										span Por:
-										|Camila Hadad
-								.card-footer
+										a(href="" class="stretched-link") Impregna tus espacios de cultura siguiendo la tendencia armonía cultural
+									.entry-autor
+										span Por: 
+											|Camila Hadad
+								.card-footer.justify-content-between.d-sm-flex
 									.entry-tags.d-inline-flex.align-items-center
-										span.inline-block.ps-3 En: 
+										span.inline-block En: 
 										nav.nav(aria-label='Secondary navigation')
 											a.nav-link(href='#') Hogar
 											a.nav-link(href='#') Diseño
 											a.nav-link(href='#') Hogar
 									.entry-comments
 										|5
-
+						// /.swiper-slide
 						.swiper-slide
 							.card
-								img(src="")
+								.card-image.d-overflow
+									picture
+										source(media="(min-width: 575.98px)" srcset="/assets/images/slide-1_w_470.jpg")
+										source(media="(max-width: 576px)" srcset="/assets/images/slide-1_w_375.jpg")
+										img(src="/assets/images/slide-1_w_470.jpg" alt="Descripción Imagen" class="img-fluid swiper-lazy")
+										.swiper-lazy-preloader
 								.card-body
 									.card-date
-										.entry-date
+										.entry-date.mb-2
 											|Febrero 20,2021
 									.card-title
-										|Impregna tus espacios de cultura siguiendo la tendencia armonía cultural
-									.card-autor
-										span Por:
-										|Camila Hadad
-								.card-footer
+										a(href="" class="stretched-link") Impregna tus espacios de cultura siguiendo la tendencia armonía cultural
+									.entry-autor
+										span Por: 
+											|Camila Hadad
+								.card-footer.justify-content-between.d-sm-flex
 									.entry-tags.d-inline-flex.align-items-center
-										span.inline-block.ps-3 En: 
+										span.inline-block En: 
 										nav.nav(aria-label='Secondary navigation')
 											a.nav-link(href='#') Hogar
 											a.nav-link(href='#') Diseño
@@ -78,19 +94,24 @@
 						// /.swiper-slide
 						.swiper-slide
 							.card
-								img(src="")
+								.card-image.d-overflow
+									picture
+										source(media="(min-width: 575.98px)" srcset="/assets/images/slide-2_w_470.jpg")
+										source(media="(max-width: 576px)" srcset="/assets/images/slide-2_w_375.jpg")
+										img(src="/assets/images/slide-2_w_470.jpg" alt="Descripción Imagen" class="img-fluid swiper-lazy")
+										.swiper-lazy-preloader
 								.card-body
 									.card-date
-										.entry-date
+										.entry-date.mb-2
 											|Febrero 20,2021
 									.card-title
-										|Impregna tus espacios de cultura siguiendo la tendencia armonía cultural
-									.card-autor
-										span Por:
-										|Camila Hadad
-								.card-footer
+										a(href="" class="stretched-link") Impregna tus espacios de cultura siguiendo la tendencia armonía cultural
+									.entry-autor
+										span Por: 
+											|Camila Hadad
+								.card-footer.justify-content-between.d-sm-flex
 									.entry-tags.d-inline-flex.align-items-center
-										span.inline-block.ps-3 En: 
+										span.inline-block En: 
 										nav.nav(aria-label='Secondary navigation')
 											a.nav-link(href='#') Hogar
 											a.nav-link(href='#') Diseño
