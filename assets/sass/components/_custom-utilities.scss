@@ -32,6 +32,10 @@
 .btn-outline-primary {
     color:var(--bs-primary) !important;
     border-color:var(--bs-primary) !important;
+    font-size: $size-14;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
     &:hover{
     	background-color:var(--bs-primary) !important;
     	color:var(--bs-white)  !important;
@@ -47,7 +51,7 @@
 			content: url('/assets/images/icons/icon-modal-blue.svg');
 			position:absolute;
 			left: 0;
-			top:4px;
+			top:0px;
 	}
 }
 .btn{

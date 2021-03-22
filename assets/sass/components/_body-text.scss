@@ -79,10 +79,10 @@
 			background-color:var(--bs-light-120);
 			border-radius: 10px;
 			padding: 0.1rem 0.4rem;
-			border:1px solid var(--bs-light-120);
+			border:2px solid var(--bs-light-120);
 			margin-left: 0.4rem;
 			&:hover{
-				border:1px solid var(--bs-primary);
+				border:2px solid var(--bs-primary);
 				background-color:var(--bs-white);
 				text-decoration: none;
 				color:var(--bs-primary);
@@ -129,9 +129,7 @@
 		}
 		p{
 			padding-bottom: $size-24;
-			@media (max-width: $break-md) {
-				margin-bottom: 0;
-			}
+			margin-bottom: 0;
 		}
 		a{
 			font-weight: 400;
@@ -147,41 +145,49 @@
 				opacity: 0.8;
 			}
 		}
-		.blockquote{
-			font-size: $size-20;
-			color: $color-negro-80;
-			padding-left:3.7rem;
-			font-weight: 400;
-			position:relative;
-			padding-right:20%;
-			&::before{
-				content: '';
-				position:absolute;
-				left:0;
-				top:15px;
-				width: 30px;
-				height: 1px;
-				background-color:$color-negro-80;
-			}
-			p{
+		figure{
+			padding-top: 2rem;
+			padding-bottom: 2rem;
+			.blockquote{
+				font-size: $size-20;
+				color: $color-negro-80;
+				padding-left:3.7rem;
+				font-weight: 400;
+				position:relative;
+				padding-right:20%;
+				margin-bottom: 0;
 				&::before{
-					content: url('/assets/images/start-blockquote.png');
+					content: '';
 					position:absolute;
-					left: 2.4rem;
-					top: -10px;
+					left:0;
+					top:15px;
+					width: 30px;
+					height: 1px;
+					background-color:$color-negro-80;
 				}
-			}
+				p{
+					padding-bottom: 0;
+					&::before{
+						content: url('/assets/images/start-blockquote.png');
+						position:absolute;
+						left: 2.4rem;
+						top: -10px;
+					}
+				}
 
+			}
 		}
 		figcaption.blockquote-footer{
 			padding-left:3.7rem;
 			display: block;
+			margin-top: 0;
 		}
 		.blockquote-footer{
 			font-size:$size-14;
-			padding-bottom: $size-24;
+			padding-bottom:0;
 			display: block;
 			margin-top: 1rem;
+			margin-bottom: 0;
 			&::before{
 				color:var(--bs-primary);
 			}
