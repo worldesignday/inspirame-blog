@@ -58,3 +58,6 @@ var swiper = new Swiper('.swiper-container-entradas', {
   },
 
 });
+
+// before - after
+ new BeerSlider( document.getElementById( "slider" ), { start: 25 } );
