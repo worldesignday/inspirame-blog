@@ -16,7 +16,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link href="/assets/css/style.css" rel="stylesheet">
     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="https://unpkg.com/beerslider/dist/BeerSlider.css" rel="stylesheet"><!--[if IE]>
+    <link href="https://unpkg.com/beerslider/dist/BeerSlider.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/taggd/4.0.0/taggd.css" rel="stylesheet"><!--[if IE]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
   </head>
@@ -82,11 +83,11 @@
         <div class="entry-content bg-white">
           <div class="container">
             <div class="row justify-content-center">
-              <div class="col-lg-11 mx-auto text-center py-30">
+              <div class="col-xl-10 col-xxl-9 mx-auto text-center py-30 taggd">
                 <picture>
-                  <source media="(min-width: 1280px)" srcset="/assets/images/hero-articulo_w_1280.jpg">
-                  <source media="(min-width: 1279.98px)" srcset="/assets/images/hero-articulo_w_375@2x.jpg">
-                  <source media="(max-width: 576px)" srcset="/assets/images/hero-articulo_w_375.jpg"><img class="img-fluid rounded-1" src="/assets/images//assets/images/hero-articulo_w_375@2x.jpg" alt="Leyenda de la imagen"><span class="blockquote-footer">Leyenda de la imagen</span>
+                  <source media="(min-width: 1280px)" srcset="/assets/images/img-tagged_w_1280.jpg">
+                  <source media="(max-width: 1279.98px)" srcset="/assets/images/img-tagged_w_375@2x.jpg">
+                  <source media="(max-width: 576px)" srcset="/assets/images/img-tagged_w_375.jpg"><img class="img-fluid rounded-1" src="/assets/images/img-tagged_w_375@2x.jpg" id="example-basic" alt="Leyenda de la imagen" loading="lazy"><span class="blockquote-footer">Leyenda de la imagen</span>
                 </picture>
               </div>
               <div class="col-xl-7 col-lg-10 mx-auto">
@@ -94,10 +95,194 @@
                 <p>Podrás ver como los colores, materiales y diferentes combinaciones crean ambientes completamente distintos con intenciones y estados muy propios de cada uno. De la mano de cada tendencia cambiar tus espacios será un proceso mucho más fácil y estamos seguros que quedarás enamorado con la renovación. Ahora sí ¡Empecemos!</p>
               </div>
               <div class="col-xl-7 col-lg-10 mx-auto py-md-5 py-3 mb-3 mb-sm-0">
-                <div class="beer-slider" id="slider"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/original-baltic.jpg">
-                  <div class="beer-reveal"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/warmsphere-baltic.jpg"></div>
+                <div class="beer-slider" id="slider">
+                  <picture>
+                    <source media="(min-width: 576px)" srcset="/assets/images/img-before_w_375@2x.jpg">
+                    <source media="(max-width: 575.98px)" srcset="/assets/images/img-before_w_375.jpg"><img src="/assets/images/img-before_w_375@2x.jpg" loading="lazy">
+                  </picture>
+                  <div class="beer-reveal">
+                    <picture>
+                      <source media="(min-width: 576px)" srcset="/assets/images/img-after_w_375@2x.jpg">
+                      <source media="(max-width: 575.98px)" srcset="/assets/images/img-after_w_375.jpg"><img src="/assets/images/img-after_w_375@2x.jpg" loading="lazy">
+                    </picture>
+                  </div>
                 </div>
                 <div class="d-flex justify-content-between"><span class="fs-6 mt-0"> <small>Antes</small></span><span class="fs-6 mt-0"> <small>Despues</small></span></div>
+              </div>
+              <div class="col-xl-7 col-lg-10 mx-auto">
+                <p>Desde regresar al origen mismo, hasta disfrutar la libre expresión; todo se abarca dentro de las <a href="">Macro Tendencias de Diseño 2020</a>. Por eso, son el punto de partida más certero para remodelar <strong>tu hogar y crear espacios llenos de riqueza estética, historia,</strong> fundamento y lo más importante, llenos de ti. Queremos que te embarques en un viaje por las 4 corrientes que rigen este año y que al final de este artículo, puedas escoger con la que más te identifiques para que empieces a transformar tus espacios.</p>
+                <p>Podrás ver como los colores, materiales y diferentes combinaciones crean ambientes completamente distintos con intenciones y estados muy propios de cada uno. De la mano de cada tendencia cambiar tus espacios será un proceso mucho más fácil y estamos seguros que quedarás enamorado con la renovación. Ahora sí ¡Empecemos!</p>
+              </div>
+              <div class="col-xl-7 col-lg-10 mx-auto bg-light py-5 mb-5 entry-encuesta"><span class="badge rounded-pill bg-warning text-dark">Ayuda quizz</span>
+                <h3 class="mb-5 text-primary-dark fw-normal">¿Cuales son los espacios que necesito remodelar en casa?</h3><span class="progress-num">1 de 4</span>
+                <div class="progress mb-3">
+                  <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"> </div>
+                </div>
+                <!-- /.progress-->
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                  <li class="nav-item d-none" role="presentation">
+                    <button class="nav-link active" id="step-1-tab" data-bs-toggle="pill" data-bs-target="#step-1" type="button" role="tab" aria-controls="step-1" aria-selected="true">paso 1</button>
+                  </li>
+                  <li class="nav-item d-none" role="presentation">
+                    <button class="nav-link" id="step-2-tab" data-bs-toggle="pill" data-bs-target="#step-2" type="button" role="tab" aria-controls="step-2" aria-selected="false">paso 2</button>
+                  </li>
+                  <li class="nav-item d-none" role="presentation">
+                    <button class="nav-link" id="step-3-tab" data-bs-toggle="pill" data-bs-target="#step-3" type="button" role="tab" aria-controls="step-3" aria-selected="false">paso 3</button>
+                  </li>
+                  <li class="nav-item d-none" role="presentation">
+                    <button class="nav-link" id="step-4-tab" data-bs-toggle="pill" data-bs-target="#step-4" type="button" role="tab" aria-controls="step-4" aria-selected="false">paso 4</button>
+                  </li>
+                  <li class="nav-item d-none" role="presentation">
+                    <button class="nav-link" id="step-5-tab" data-bs-toggle="pill" data-bs-target="#step-5" type="button" role="tab" aria-controls="step-5" aria-selected="false">paso 5</button>
+                  </li>
+                </ul>
+                <!-- /#pills-tab-->
+                <form>
+                  <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="step-1" role="tabpanel" aria-labelledby="step-1-tab"> 
+                      <h4 class="fs-5 fw-normal text-primary-dark pb-2">1. ¿En tu casa te falta espacio o almacenamiento?</h4>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Nunca</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Casi nunca</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">En ocasiones</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Con frecuencia</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Casi siempre</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Siempre</label>
+                      </div>
+                      <!-- /.form check-->
+                      <div class="border-top mt-3 d-flex justify-content-end">
+                        <button class="btn btn-encuesta">Siguiente</button>
+                      </div>
+                    </div>
+                    <!-- /#step-1-->
+                    <div class="tab-pane fade" id="step-2" role="tabpanel" aria-labelledby="step-2-tab">
+                      <h4 class="fs-5 fw-normal text-primary-dark pb-2">2. ¿Pregunta 2?</h4>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Nunca</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Casi nunca</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">En ocasiones</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Con frecuencia</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Casi siempre</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Siempre</label>
+                      </div>
+                      <!-- /.form check-->
+                      <div class="border-top mt-3 d-flex justify-content-between">
+                        <button class="btn btn-encuesta">Atrás</button>
+                        <button class="btn btn-encuesta">Siguiente</button>
+                      </div>
+                    </div>
+                    <!-- /#step-2-->
+                    <div class="tab-pane fade" id="step-3" role="tabpanel" aria-labelledby="step-3-tab">
+                      <h4 class="fs-5 fw-normal text-primary-dark pb-2">2. ¿Pregunta 3?</h4>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Nunca</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Casi nunca</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">En ocasiones</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Con frecuencia</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Casi siempre</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Siempre</label>
+                      </div>
+                      <!-- /.form check-->
+                      <div class="border-top mt-3 d-flex justify-content-between">
+                        <button class="btn btn-encuesta">Atrás</button>
+                        <button class="btn btn-encuesta">Siguiente</button>
+                      </div>
+                    </div>
+                    <!-- /#step-3-->
+                    <div class="tab-pane fade" id="step-4" role="tabpanel" aria-labelledby="step-4-tab">
+                      <h4 class="fs-5 fw-normal text-primary-dark pb-2">2. ¿Pregunta 4?</h4>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Nunca</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Casi nunca</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">En ocasiones</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Con frecuencia</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Casi siempre</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" id="flexRadioDefault1" type="radio" name="flexRadioDefault">
+                        <label class="form-check-label" for="flexRadioDefault1">Siempre</label>
+                      </div>
+                      <!-- /.form check-->
+                      <div class="border-top mt-3 d-flex justify-content-between">
+                        <button class="btn btn-encuesta">Atrás</button>
+                        <button class="btn btn-encuesta">Siguiente</button>
+                        <!-- /.form check-->
+                      </div>
+                      <div class="border-top mt-3 d-flex justify-content-between">
+                        <button class="btn btn-encuesta">Atrás</button>
+                        <button class="btn btn-encuesta">Siguiente</button>
+                      </div>
+                    </div>
+                    <!-- /#step-4-->
+                    <div class="tab-pane fade" id="step-5" role="tabpanel" aria-labelledby="step-5-tab">
+                      <div class="well">Respuesta</div>
+                    </div>
+                    <!-- /#step-5-->
+                  </div>
+                  <!-- /.tab-content-->
+                </form>
+                <!-- /form-->
               </div>
               <div class="col-xl-7 col-lg-10 mx-auto">   
                 <h2>Solsticio: Vivir la emoción de las vacaciones dentro de tu hogar</h2>
@@ -412,6 +597,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/taggd/4.0.0/taggd.min.js"></script>
     <script src="/assets/js/custom.js"></script>
     <script>
       window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

@@ -29,6 +29,9 @@
 .text-primary{
 	color:var(--bs-primary) !important;
 }
+.text-primary-dark{
+	color:var(--bs-dark) !important;
+}
 .btn-outline-primary {
     color:var(--bs-primary) !important;
     border-color:var(--bs-primary) !important;
@@ -41,6 +44,14 @@
     	color:var(--bs-white)  !important;
     	text-decoration: none;
     }
+}
+.btn-encuesta{
+	color:var(--bs-primary) !important;
+	padding: 0;
+	border-radius:0;
+	&:hover{
+		border-bottom:1px solid;
+	}
 }
 .icon-modal{
 	position: relative;

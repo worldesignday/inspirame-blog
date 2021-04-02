@@ -64,15 +64,15 @@
         position: absolute;
         top: 0;
         left: 100%;
-        z-index: -5;
+        //z-index: -5;
     }
     &::after {
         left: auto;
         right: 100%;
-        width: 10%;
+        width: 20%;
     }
     &::before{
-        width: 10%;
+        width: 20%;
     }
 }
 @mixin color-bg-parts($background: false) {

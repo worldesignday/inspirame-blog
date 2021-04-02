@@ -41,27 +41,191 @@ block contenido
     .entry-content.bg-white
         .container
             .row.justify-content-center
-                .col-lg-11.mx-auto.text-center.py-30
+                .col-xl-10.col-xxl-9.mx-auto.text-center.py-30.taggd
                     picture
-                        source(media="(min-width: 1280px)" srcset="/assets/images/hero-articulo_w_1280.jpg")
-                        source(media="(min-width: 1279.98px)" srcset="/assets/images/hero-articulo_w_375@2x.jpg")
-                        source(media="(max-width: 576px)" srcset="/assets/images/hero-articulo_w_375.jpg")
-                        img.img-fluid.rounded-1(src='/assets/images//assets/images/hero-articulo_w_375@2x.jpg' alt='Leyenda de la imagen')
+                        source(media="(min-width: 1280px)" srcset="/assets/images/img-tagged_w_1280.jpg")
+                        source(media="(max-width: 1279.98px)" srcset="/assets/images/img-tagged_w_375@2x.jpg")
+                        source(media="(max-width: 576px)" srcset="/assets/images/img-tagged_w_375.jpg")
+                        img.img-fluid.rounded-1(src='/assets/images/img-tagged_w_375@2x.jpg' id="example-basic" alt='Leyenda de la imagen' loading="lazy")
                         span.blockquote-footer Leyenda de la imagen
                 .col-xl-7.col-lg-10.mx-auto
                     p Desde regresar al origen mismo, hasta disfrutar la libre expresión; todo se abarca dentro de las <a href="">Macro Tendencias de Diseño 2020</a>. Por eso, son el punto de partida más certero para remodelar <strong>tu hogar y crear espacios llenos de riqueza estética, historia,</strong> fundamento y lo más importante, llenos de ti. Queremos que te embarques en un viaje por las 4 corrientes que rigen este año y que al final de este artículo, puedas escoger con la que más te identifiques para que empieces a transformar tus espacios.
                     p Podrás ver como los colores, materiales y diferentes combinaciones crean ambientes completamente distintos con intenciones y estados muy propios de cada uno. De la mano de cada tendencia cambiar tus espacios será un proceso mucho más fácil y estamos seguros que quedarás enamorado con la renovación. Ahora sí ¡Empecemos!
                 .col-xl-7.col-lg-10.mx-auto.py-md-5.py-3.mb-3.mb-sm-0
                     #slider.beer-slider
-                        img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/original-baltic.jpg") 
+                        picture
+                            source(media="(min-width: 576px)" srcset="/assets/images/img-before_w_375@2x.jpg")
+                            source(media="(max-width: 575.98px)" srcset="/assets/images/img-before_w_375.jpg")
+                            img(src="/assets/images/img-before_w_375@2x.jpg"  loading="lazy") 
                         .beer-reveal
-                            img(src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/warmsphere-baltic.jpg")
+                            picture
+                                source(media="(min-width: 576px)" srcset="/assets/images/img-after_w_375@2x.jpg")
+                                source(media="(max-width: 575.98px)" srcset="/assets/images/img-after_w_375.jpg")
+                                img(src="/assets/images/img-after_w_375@2x.jpg" loading="lazy") 
                     .d-flex.justify-content-between
                         span.fs-6.mt-0 
                             small Antes
                         span.fs-6.mt-0 
                             small Despues
-      
+                .col-xl-7.col-lg-10.mx-auto
+                    p Desde regresar al origen mismo, hasta disfrutar la libre expresión; todo se abarca dentro de las <a href="">Macro Tendencias de Diseño 2020</a>. Por eso, son el punto de partida más certero para remodelar <strong>tu hogar y crear espacios llenos de riqueza estética, historia,</strong> fundamento y lo más importante, llenos de ti. Queremos que te embarques en un viaje por las 4 corrientes que rigen este año y que al final de este artículo, puedas escoger con la que más te identifiques para que empieces a transformar tus espacios.
+                    p Podrás ver como los colores, materiales y diferentes combinaciones crean ambientes completamente distintos con intenciones y estados muy propios de cada uno. De la mano de cada tendencia cambiar tus espacios será un proceso mucho más fácil y estamos seguros que quedarás enamorado con la renovación. Ahora sí ¡Empecemos!
+                .col-xl-7.col-lg-10.mx-auto.bg-light.py-5.mb-5.entry-encuesta
+                    span(class="badge rounded-pill bg-warning text-dark") Ayuda quizz
+                    h3.mb-5.text-primary-dark.fw-normal ¿Cuales son los espacios que necesito remodelar en casa?
+                    span.progress-num 1 de 4
+                    .progress.mb-3
+                        .progress-bar(role='progressbar' style='width: 20%;' aria-valuenow='25' aria-valuemin='0' aria-valuemax='100') 
+                    // /.progress
+                    ul#pills-tab.nav.nav-pills.mb-3(role='tablist')
+                        li.nav-item.d-none(role='presentation')
+                            button#step-1-tab.nav-link.active(data-bs-toggle='pill' data-bs-target='#step-1' type='button' role='tab' aria-controls='step-1' aria-selected='true') paso 1
+                        li.nav-item.d-none(role='presentation')
+                            button#step-2-tab.nav-link(data-bs-toggle='pill' data-bs-target='#step-2' type='button' role='tab' aria-controls='step-2' aria-selected='false') paso 2
+                        li.nav-item.d-none(role='presentation')
+                            button#step-3-tab.nav-link(data-bs-toggle='pill' data-bs-target='#step-3' type='button' role='tab' aria-controls='step-3' aria-selected='false') paso 3
+                        li.nav-item.d-none(role='presentation')
+                            button#step-4-tab.nav-link(data-bs-toggle='pill' data-bs-target='#step-4' type='button' role='tab' aria-controls='step-4' aria-selected='false') paso 4
+                        li.nav-item.d-none(role='presentation')
+                            button#step-5-tab.nav-link(data-bs-toggle='pill' data-bs-target='#step-5' type='button' role='tab' aria-controls='step-5' aria-selected='false') paso 5
+                    // /#pills-tab
+                    form
+                        #pills-tabContent.tab-content
+                            #step-1.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='step-1-tab') 
+                                h4.fs-5.fw-normal.text-primary-dark.pb-2 1. ¿En tu casa te falta espacio o almacenamiento?
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Nunca
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Casi nunca
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | En ocasiones
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Con frecuencia
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Casi siempre
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Siempre
+
+                                // /.form check
+                                .border-top.mt-3.d-flex.justify-content-end
+                                    button(class="btn btn-encuesta") Siguiente
+                            // /#step-1
+                            #step-2.tab-pane.fade(role='tabpanel' aria-labelledby='step-2-tab')
+                                h4.fs-5.fw-normal.text-primary-dark.pb-2 2. ¿Pregunta 2?
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Nunca
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Casi nunca
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | En ocasiones
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Con frecuencia
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Casi siempre
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Siempre
+                                // /.form check
+                                .border-top.mt-3.d-flex.justify-content-between
+                                    button(class="btn btn-encuesta") Atrás
+                                    button(class="btn btn-encuesta") Siguiente
+                            // /#step-2
+                            #step-3.tab-pane.fade(role='tabpanel' aria-labelledby='step-3-tab')
+                                h4.fs-5.fw-normal.text-primary-dark.pb-2 2. ¿Pregunta 3?
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Nunca
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Casi nunca
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | En ocasiones
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Con frecuencia
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Casi siempre
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Siempre
+                                // /.form check
+                                .border-top.mt-3.d-flex.justify-content-between
+                                    button(class="btn btn-encuesta") Atrás
+                                    button(class="btn btn-encuesta") Siguiente
+                            // /#step-3
+                            #step-4.tab-pane.fade(role='tabpanel' aria-labelledby='step-4-tab')
+                                h4.fs-5.fw-normal.text-primary-dark.pb-2 2. ¿Pregunta 4?
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Nunca
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Casi nunca
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | En ocasiones
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Con frecuencia
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Casi siempre
+                                .form-check
+                                    input#flexRadioDefault1.form-check-input(type='radio' name='flexRadioDefault')
+                                    label.form-check-label(for='flexRadioDefault1')
+                                        | Siempre
+                                // /.form check
+                                .border-top.mt-3.d-flex.justify-content-between
+                                    button(class="btn btn-encuesta") Atrás
+                                    button(class="btn btn-encuesta") Siguiente
+                                    // /.form check
+                                .border-top.mt-3.d-flex.justify-content-between
+                                    button(class="btn btn-encuesta") Atrás
+                                    button(class="btn btn-encuesta") Siguiente
+                            // /#step-4
+                            #step-5.tab-pane.fade(role='tabpanel' aria-labelledby='step-5-tab')
+                                .well
+                                    | Respuesta
+                            // /#step-5
+                        // /.tab-content
+                    // /form
+
                 .col-xl-7.col-lg-10.mx-auto    
                     h2 Solsticio: Vivir la emoción de las vacaciones dentro de tu hogar
                     p Para muchos, el hogar es un templo de desconexión del mundo exterior, es donde cada uno tiene ese espacio hecho a imagen y semejanza de un lugar donde la única palabra que lo describe es descanso y donde se transmiten sensaciones de paz y tranquilidad. Si tú eres una de esas personas, esta tendencia es definitivamente la que deberías llevar a la realidad en tu casa. <strong>Solsticio</strong> nos invita a trasladar los colores de paisajes costeros y las decoraciones y grafías del verano al interior del hogar. Tendrás elementos que evoquen viajes a lugares como la costa italiana como decoración y convertirás tus espacios en unos muy modernos con un toque retro ¡Inigualable! Conoce más acerca de solsticio entrando aquí: Solsticio: <a href="">la emoción de vivir unas eternas vacaciones</a>.
