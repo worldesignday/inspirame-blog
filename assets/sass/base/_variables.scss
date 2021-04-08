@@ -27,7 +27,7 @@
 	--breakpoint-xl: 1200;
 }
 
-
+$nav-pills-link-active-color:#0069B4 !default;
 
 
 // black
@@ -108,3 +108,11 @@ $break-xxl: 1400px;
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
 $base-url: '/assets/' !default;
+
+$aspect-ratios: (
+  "1x1": 100%,
+  "4x3": calc(3 / 4 * 100%),
+  "3x4": calc(4 / 3 * 100%),
+  "16x9": calc(9 / 16 * 100%),
+  "21x9": calc(9 / 21 * 100%)
+);

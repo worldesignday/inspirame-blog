@@ -5,6 +5,9 @@
 .bg-light{
 	background-color: var(--bs-light) !important;
 }
+.bg-light-120{
+	background-color: var(--bs-light-120) !important;
+}
 .bg-dark{
 	background-color: var(--bs-dark) !important;
 }
@@ -32,6 +35,10 @@
 .text-primary-dark{
 	color:var(--bs-dark) !important;
 }
+.text-primary-gray{
+	color:var(--bs-gray-dark);
+}
+
 .btn-outline-primary {
     color:var(--bs-primary) !important;
     border-color:var(--bs-primary) !important;
@@ -39,10 +46,21 @@
     font-weight: 500;
     display: inline-flex;
     align-items: center;
+    border-width:2px;
     &:hover{
     	background-color:var(--bs-primary) !important;
     	color:var(--bs-white)  !important;
     	text-decoration: none;
+    }
+    &--white{
+    	border-color:$color-negro-0 !important;
+    	color: $color-negro-0 !important;
+    	padding-top: 0.7rem;
+    	padding-bottom: 0.7rem;	
+    	border-width:2px;
+    }
+    &.active{
+    	background:var(--bs-primary) !important;
     }
 }
 .btn-encuesta{
@@ -84,6 +102,20 @@
 	border-right:1px solid var(--bs-primary);
 
 }
+.gradient-overlay{
+	position: relative;
+	&::before {
+	    content: "";
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    border-radius: inherit;
+	    z-index: 1;
+	    background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 20%, rgba(0,0,0,0) 100%);
+	}
+}
 //lift animation
 
 .lift {
@@ -105,4 +137,48 @@
 	box-shadow: 0 2rem 5rem rgba(22, 28, 45, .1), 0 .5rem 1rem -.75rem rgba(22, 28, 45, .05)!important;
 	transform: translate3d(0, -7px, 0);
 	
+}
+
+//overlay
+.overlay{
+	position: relative;
+	&::before {
+	    content: "";
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    border-radius: inherit;
+	    z-index: 0;
+	    background: $color-negro-100;
+	}
+	&-black::before {
+    	background-color: #161c2d;
+	}
+	&-80::before {
+    	opacity: .8;
+	}
+	&-60::before {
+    	opacity: .6;
+	}
+	&-40::before {
+    	opacity: .4;
+	}
+	&-30::before {
+    	opacity: .3;
+	}
+
+	&-20::before {
+    	opacity: .2;
+	}
+
+}
+
+//ratio
+.ratio-5x4 {
+    --aspect-ratio: calc(5 / 4 * 100%);
+    @media (max-width: $break-lg) {
+    	--aspect-ratio: calc(3 / 4 * 100%);
+    }
 }

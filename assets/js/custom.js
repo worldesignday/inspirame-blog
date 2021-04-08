@@ -1,3 +1,24 @@
+var swiper = new Swiper('.swiper-container-hero', {
+  slidesPerView: 'auto',
+  spaceBetween: 0,
+  // Navigation arrows
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // Disable preloading of all images
+  preloadImages: false,
+  // Enable lazy loading
+  lazy: true,
+  lazy: {
+    loadPrevNext: true,
+  },
+});
 var swiper = new Swiper('.swiper-container', {
 
   // Navigation arrows

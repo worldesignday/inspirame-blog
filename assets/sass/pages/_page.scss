@@ -59,12 +59,24 @@
 
 			.card-image img{
 				transform: scale(1.08);
-			}
-			.card-body{
-				margin-top: -5px;
+				position:relative;
 
 			}
+
 		}
+	}
+	.progress-num{
+		font-size: $size-14;
+		font-weight: 300;
+		color:$color-negro-50;
+	}
+	.progress{
+		position: relative;
+		height: 0.7rem;
+		background-color:$color-negro-0;
+		.progress-bar{
+		}
+
 	}
 
 }
