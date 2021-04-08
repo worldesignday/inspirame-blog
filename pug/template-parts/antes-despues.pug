@@ -1,0 +1,18 @@
+.col-xl-10.col-xxl-7.mx-auto.py-md-5.py-3.mb-3.mb-sm-0
+    #slider.beer-slider
+        picture
+            source(media="(min-width: 576px)" srcset="/assets/images/img-before_w_375@2x.jpg")
+            source(media="(max-width: 575.98px)" srcset="/assets/images/img-before_w_375.jpg")
+            img(src="/assets/images/img-before_w_375@2x.jpg"  loading="lazy") 
+        .beer-reveal
+            picture
+                source(media="(min-width: 576px)" srcset="/assets/images/img-after_w_375@2x.jpg")
+                source(media="(max-width: 575.98px)" srcset="/assets/images/img-after_w_375.jpg")
+                img(src="/assets/images/img-after_w_375@2x.jpg" loading="lazy") 
+    // /#.beer-slider
+    .d-flex.justify-content-between
+        span.fs-6.mt-0 
+            small Antes
+        span.fs-6.mt-0 
+            small Despues
+// /.antes-despues
