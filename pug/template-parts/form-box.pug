@@ -1,0 +1,25 @@
+section.entry-form.pb-50.position-relative.bg-white
+    .container
+        .row.justify-content-between.bg-light.rounded.py-30.d-overflow
+            .col-md-4.g-0.position-relative.entry-form--img
+                picture
+                    img(src="/assets/images/form-box.png" alt="Descripción Imagen" class="img-fluid position-absolute d-none d-md-block")
+            .col-md-7.pe-sm-5
+                h2.fw-normal.text-primary-dark.mb-1 Suscríbete a nuestro boletín
+                p.text-primary-gray.border-bottom.pb-2.mb-2 !No te pierdas nunca una publicacion!
+                .row.mt-4
+                    .col
+                        label.form-label(for='exampleFormControlInput1') Nombre Completo
+                        input.form-control(type='text' placeholder='Nombre Completo' aria-label='Nombre Completo')
+                    .col
+                        label.form-label(for='exampleFormControlInput1') Teléfono de contácto
+                        input.form-control(type='text' placeholder='Teléfono de contácto' aria-label='Teléfono de contácto')
+                    .col-12.mt-3
+                        label.form-label(for='exampleFormControlInput1') Correo electrónico
+                        input.form-control(type='email' placeholder='name@example.com' aria-label='name@example.com')
+                    .col.mt-2
+                        .form-check
+                            input#flexCheckDefault.form-check-input(type='checkbox' value='')
+                            label.form-check-label(for='flexCheckDefault')
+                            | Autorizo el tratamiento de mis datos de acuerdo a los siguientes <a href="">términos</a>
+// /.entry-form

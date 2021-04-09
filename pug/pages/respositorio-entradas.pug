@@ -1,0 +1,19 @@
+//- .component-name
+//- .component-name--variant
+//- .component-name__sub-object
+//- .component-name__sub-object--variant 
+
+extends ../page-templates/tpl_archive.pug
+
+block title
+    title Inspirame - Corona
+block contenido
+    section.entry-repository--tags.pt-45.pb-50.position-relative.bg-light-120
+        .container
+            include ../template-parts/entradas-repository-entradas.pug
+    section.entry-all-repository--tags.pt-45.pb-50.position-relative.bg-white
+        .container        
+            include ../template-parts/entradas-all-repository-tags.pug
+
+
+

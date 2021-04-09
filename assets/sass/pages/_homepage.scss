@@ -54,22 +54,18 @@
 	    	&-body{
 	    		transition: all 0.3s ease-in-out;
 	    	}
-
-		    	.card-image{
-		    		object-fit: cover;
-		    		overflow: hidden;
-		    		border-radius: 3px;
-		    		img{
-		    			height: auto;
-		    			transition: all 0.3s ease-in-out;
-		    		}
-		    		+ div{
-		    			z-index: 12;
-		    		}
-		    	}
-
-
-
+	    	.card-image{
+	    		object-fit: cover;
+	    		overflow: hidden;
+	    		border-radius: 3px;
+	    		img{
+	    			height: auto;
+	    			transition: all 0.3s ease-in-out;
+	    		}
+	    		+ div{
+	    			z-index: 12;
+	    		}
+	    	}
 	    }
 	}
 	&-aldia{
@@ -95,13 +91,43 @@
 				}
 			}
 		}
-		.card-image img{
-			position:relative;
-			z-index: 0;
+		.entry-autor{
+			+ a{
+				font-size: $size-15;
+				font-weight:500;
+				span{
+					&::after{
+						content: url(/assets/images/icons/icon-next-white.svg);
+						right: 0;
+						margin-left: 1rem;
+					}
+
+				}
+			}
+		}
+		.card-image {
+			+ .d-flex{
+				z-index: 1;
+			}
+			img{
+				position:relative;
+				z-index: 0;
+				transition: all 0.3s ease-in-out;
+			}
 		}
 		.overlay{
 			&::before{
 				z-index: 1;
+			}
+		}
+		.card{
+			&:hover{
+
+				.card-image img{
+					transform: scale(1.08);
+					position:relative;
+
+				}
 			}
 		}
 
@@ -160,6 +186,10 @@
 			&::placeholder{
 				color:$color-negro-30;
 			}
+		}
+		&--img{
+			top:-$size-45;
+			left: 0
 		}
 	}
 }

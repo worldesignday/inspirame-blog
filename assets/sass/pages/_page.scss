@@ -7,6 +7,9 @@
 	&-relacionadas{
 		&--title{
 			color:var(--bs-primary-dark);
+			.badge{
+				font-size:$size-12;
+			}
 		}
 		.card{
 			text-align: left;
@@ -43,6 +46,83 @@
 
 		}
 	}
+	&-repository-grid{
+		.card{
+			&-title{
+				font-size: $size-20;
+				color:var(--bs-primary-dark);
+				line-height: 1.1;
+					a{
+						font-size: $size-20;
+						color:var(--bs-primary-dark);
+						line-height: 1.1;
+						&:hover{
+							text-decoration: none;
+						}
+					}
+			}
+			&-image{
+				img{
+					transition: all 0.3s ease-in-out;
+				}
+			}
+			&:hover{
+
+				.card-image img{
+					transform: scale(1.08);
+					position:relative;
+
+				}
+
+			}
+			.entry-autor{
+				+ a{
+					font-size: $size-15;
+					font-weight:500;
+					span{
+						&::after{
+							content: url(/assets/images/icons/icon-next-blue.svg);
+							right: 0;
+							margin-left: 1rem;
+						}
+
+					}
+					&:hover{
+						color:var(--bs-primary);
+						text-decoration: none;
+						border-bottom: 1px solid var(--bs-primary-dark)
+					}
+				}
+			}
+		}
+	}
+	&-relacionadas{
+		.card{
+			&:hover{
+
+				.card-image img{
+					transform: scale(1.08);
+					position:relative;
+
+				}
+
+			}
+		}
+		.progress-num{
+			font-size: $size-14;
+			font-weight: 300;
+			color:$color-negro-50;
+		}
+		.progress{
+			position: relative;
+			height: 0.7rem;
+			background-color:$color-negro-0;
+			.progress-bar{
+			}
+
+		}
+
+	}
 
 }
 @media (max-width: $break-md) {
@@ -53,30 +133,4 @@
 		}
 	}
 }
-.entry-relacionadas{
-	.card{
-		&:hover{
 
-			.card-image img{
-				transform: scale(1.08);
-				position:relative;
-
-			}
-
-		}
-	}
-	.progress-num{
-		font-size: $size-14;
-		font-weight: 300;
-		color:$color-negro-50;
-	}
-	.progress{
-		position: relative;
-		height: 0.7rem;
-		background-color:$color-negro-0;
-		.progress-bar{
-		}
-
-	}
-
-}
