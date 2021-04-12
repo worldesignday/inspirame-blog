@@ -1,12 +1,19 @@
-header.bg-white
+header.bg-white.position-relative
+	.navbar-search.bg-light
+		.container.d-flex.flex-nowrap.align-items-center
+			span.icon-search
+					img(src="/assets/images/icons/icon-search.svg")
+			input.form-control.form-control-xl.navbar-search-field(type='text' placeholder='¿Que estás Búscando?' aria-label='Search')
+			.d-flex.align-items-center
+				span.text-muted.fs-xs.d-none.d-sm-inline cerrar
+				button.btn-close.p-2(type='submit' class="p-0" data-bs-toggle="search")
 	nav.navbar.navbar-light
 		.container
 			a.navbar-brand(href='/')
 				img(src='/assets/images/icons/logo-corona-header.svg' alt='' width='70' height='70')
 			.d-flex
-				form.d-flex.me-2.pe-3.border-end
-					input.form-control.me-2.d-none(type='search' placeholder='Search' aria-label='Search')
-					button.btn(type='submit' class="p-0")
+				.navbar-tool.d-flex.me-2.me-ms-0.pe-sm-3.pe-0
+					a.pt-1( href="" data-bs-toggle="search")
 						span.icon-search
 							img(src="/assets/images/icons/icon-search.svg")
 				.header-social.d-flex.ms-2
@@ -20,39 +27,48 @@ header.bg-white
 						span.icon-social
 							img(src="/assets/images/icons/icon-pinterest.svg")
 	// /.navbar
+section#tags.header--fixed.bg-white
 	.nav-scroller.bg--body.shadow-sm.py-2.px-2
 		.container-xxl
 			.d-inline.float-start.pt-1.d-none.d-sm-block
 				span.nav-scroller--label.border-end.pe-2.me-2.text-uppercase
 					|tags
-			nav.nav(aria-label='Secondary navigation')
-				a.nav-link.active(aria-current='page' href='/blog/pages/respositorio-tags.html') Dashboard
-				a.nav-link(href='#')
-					| Friends
-				a.nav-link(href='#') Wallpapers
-				a.nav-link(href='#') Nature
-				a.nav-link(href='#') People
-				a.nav-link(href='#') Architecture
-				a.nav-link(href='#') Current Events
-				a.nav-link(href='#') Business & Work
-				a.nav-link(href='#') Fashion
-				a.nav-link(href='#') Film
-				a.nav-link(href='#') Health & Wellness
-				a.nav-link(href='#') Interiors
-				a.nav-link(href='#') Street Photography
-				a.nav-link(href='#') Wallpapers
-				a.nav-link(href='#') Nature
-				a.nav-link(href='#') People
-				a.nav-link(href='#') Architecture
-				a.nav-link(href='#') Current Events
-				a.nav-link(href='#') Business & Work
-				a.nav-link(href='#') Fashion
-				a.nav-link(href='#') Film
-				a.nav-link(href='#') Health & Wellness
-				a.nav-link(href='#') Interiors
-				a.nav-link(href='#') Street Photography
+			.pn-ProductNav_Wrapper
+				nav#pnProductNav.nav.pn-ProductNav(aria-label='Secondary navigation')
+					#pnProductNavContents.pn-ProductNav_Contents.d-flex
+						a.nav-link.active(aria-current='page' href='/blog/pages/respositorio-tags.html') Dashboard
+						a.nav-link(href='#')
+							| Friends
+						a.nav-link.pn-ProductNav_Link(href='#') Wallpapers
+						a.nav-link.pn-ProductNav_Link(href='#') Nature
+						a.nav-link.pn-ProductNav_Link(href='#') People
+						a.nav-link.pn-ProductNav_Link(href='#') Architecture
+						a.nav-link.pn-ProductNav_Link(href='#') Current Events
+						a.nav-link.pn-ProductNav_Link(href='#') Business & Work
+						a.nav-link.pn-ProductNav_Link(href='#') Fashion
+						a.nav-link.pn-ProductNav_Link(href='#') Film
+						a.nav-link.pn-ProductNav_Link(href='#') Health & Wellness
+						a.nav-link.pn-ProductNav_Link(href='#') Interiors
+						a.nav-link.pn-ProductNav_Link(href='#') Street Photography
+						a.nav-link.pn-ProductNav_Link(href='#') Wallpapers
+						a.nav-link.pn-ProductNav_Link(href='#') Nature
+						a.nav-link.pn-ProductNav_Link(href='#') People
+						a.nav-link.pn-ProductNav_Link(href='#') Architecture
+						a.nav-link.pn-ProductNav_Link(href='#') Current Events
+						a.nav-link.pn-ProductNav_Link(href='#') Business & Work
+						a.nav-link.pn-ProductNav_Link(href='#') Fashion
+						a.nav-link.pn-ProductNav_Link(href='#') Film
+						a.nav-link.pn-ProductNav_Link(href='#') Health & Wellness
+						a.nav-link.pn-ProductNav_Link(href='#') Interiors
+						a.nav-link.pn-ProductNav_Link(href='#') Street Photography
+				button#pnAdvancerLeft(class="pn-Advancer pn-Advancer_Left" type="button")
+					<svg width="24" height="24" class="_1A-eG" version="1.1" viewBox="0 0 32 32" aria-hidden="false"><path fill="#0F274D" d="M20.6667 24.6666l-2 2L8 16 18.6667 5.3333l2 2L12 16l8.6667 8.6666z"></path></svg>
+				button#pnAdvancerRight(class="pn-Advancer pn-Advancer_Right" type="button")
+					<svg width="24" height="24" class="_1A-eG" version="1.1" viewBox="0 0 32 32" aria-hidden="false"><path fill="#0F274D" d="M11.3333 7.3333l2-2L24 16 13.3333 26.6666l-2-2L20 16l-8.6667-8.6667z"></path></svg>
 	// /.nav-scroller
 // /header
+
+				
 
 
 

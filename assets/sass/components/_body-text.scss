@@ -209,11 +209,24 @@
 
 		}
 	}
-	&-slide-title{
-		font-size:$size-45;
-		color:$color-negro-0;
-		font-weight: 500;
-		line-height: 1;
+	&-slide{
+		&-title{
+			font-size:$size-45;
+			color:$color-negro-0;
+			font-weight: 500;
+			line-height: 1;
+			@media (max-width: $break-md) {
+				font-size:$size-40;
+				padding-right: 2rem;
+			}
+
+		}
+		&-resumen{	
+			@media (max-width: $break-md) {
+				font-size:$size-15;
+				padding-right: 2rem;
+			}
+		}
 	}
 
 }

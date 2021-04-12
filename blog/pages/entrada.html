@@ -22,27 +22,40 @@
 <![endif]-->
   </head>
   <body>
-    <header class="bg-white">
+    <header class="bg-white position-relative">
+      <div class="navbar-search bg-light">
+        <div class="container d-flex flex-nowrap align-items-center"><span class="icon-search"><img src="/assets/images/icons/icon-search.svg"></span>
+          <input class="form-control form-control-xl navbar-search-field" type="text" placeholder="¿Que estás Búscando?" aria-label="Search">
+          <div class="d-flex align-items-center"><span class="text-muted fs-xs d-none d-sm-inline">cerrar</span>
+            <button class="btn-close p-2 p-0" type="submit" data-bs-toggle="search"></button>
+          </div>
+        </div>
+      </div>
       <nav class="navbar navbar-light">
         <div class="container"><a class="navbar-brand" href="/"><img src="/assets/images/icons/logo-corona-header.svg" alt="" width="70" height="70"></a>
           <div class="d-flex">
-            <form class="d-flex me-2 pe-3 border-end">
-              <input class="form-control me-2 d-none" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn p-0" type="submit"><span class="icon-search"><img src="/assets/images/icons/icon-search.svg"></span></button>
-            </form>
+            <div class="navbar-tool d-flex me-2 me-ms-0 pe-sm-3 pe-0"><a class="pt-1" href="" data-bs-toggle="search"><span class="icon-search"><img src="/assets/images/icons/icon-search.svg"></span></a></div>
             <div class="header-social d-flex ms-2"><a class="border rounded-1 me-2 d-none d-sm-block" href=""><span class="icon-social"><img src="/assets/images/icons/facebook-icon.svg"></span></a><a class="border rounded-1 me-2 d-none d-sm-block" href=""><span class="icon-social"><img src="/assets/images/icons/icon-instagram.svg"></span></a><a class="border rounded-1 me-2 d-none d-sm-block" href=""><span class="icon-social"><img src="/assets/images/icons/icon-pinterest.svg"></span></a></div>
           </div>
         </div>
       </nav>
       <!-- /.navbar-->
+    </header>
+    <section class="header--fixed bg-white" id="tags">
       <div class="nav-scroller bg--body shadow-sm py-2 px-2">
         <div class="container-xxl">
           <div class="d-inline float-start pt-1 d-none d-sm-block"><span class="nav-scroller--label border-end pe-2 me-2 text-uppercase">tags</span></div>
-          <nav class="nav" aria-label="Secondary navigation"><a class="nav-link active" aria-current="page" href="/blog/pages/respositorio-tags.html">Dashboard</a><a class="nav-link" href="#">Friends</a><a class="nav-link" href="#">Wallpapers</a><a class="nav-link" href="#">Nature</a><a class="nav-link" href="#">People</a><a class="nav-link" href="#">Architecture</a><a class="nav-link" href="#">Current Events</a><a class="nav-link" href="#">Business & Work</a><a class="nav-link" href="#">Fashion</a><a class="nav-link" href="#">Film</a><a class="nav-link" href="#">Health & Wellness</a><a class="nav-link" href="#">Interiors</a><a class="nav-link" href="#">Street Photography</a><a class="nav-link" href="#">Wallpapers</a><a class="nav-link" href="#">Nature</a><a class="nav-link" href="#">People</a><a class="nav-link" href="#">Architecture</a><a class="nav-link" href="#">Current Events</a><a class="nav-link" href="#">Business & Work</a><a class="nav-link" href="#">Fashion</a><a class="nav-link" href="#">Film</a><a class="nav-link" href="#">Health & Wellness</a><a class="nav-link" href="#">Interiors</a><a class="nav-link" href="#">Street Photography</a></nav>
+          <div class="pn-ProductNav_Wrapper">
+            <nav class="nav pn-ProductNav" id="pnProductNav" aria-label="Secondary navigation">
+              <div class="pn-ProductNav_Contents d-flex" id="pnProductNavContents"><a class="nav-link active" aria-current="page" href="/blog/pages/respositorio-tags.html">Dashboard</a><a class="nav-link" href="#">Friends</a><a class="nav-link pn-ProductNav_Link" href="#">Wallpapers</a><a class="nav-link pn-ProductNav_Link" href="#">Nature</a><a class="nav-link pn-ProductNav_Link" href="#">People</a><a class="nav-link pn-ProductNav_Link" href="#">Architecture</a><a class="nav-link pn-ProductNav_Link" href="#">Current Events</a><a class="nav-link pn-ProductNav_Link" href="#">Business & Work</a><a class="nav-link pn-ProductNav_Link" href="#">Fashion</a><a class="nav-link pn-ProductNav_Link" href="#">Film</a><a class="nav-link pn-ProductNav_Link" href="#">Health & Wellness</a><a class="nav-link pn-ProductNav_Link" href="#">Interiors</a><a class="nav-link pn-ProductNav_Link" href="#">Street Photography</a><a class="nav-link pn-ProductNav_Link" href="#">Wallpapers</a><a class="nav-link pn-ProductNav_Link" href="#">Nature</a><a class="nav-link pn-ProductNav_Link" href="#">People</a><a class="nav-link pn-ProductNav_Link" href="#">Architecture</a><a class="nav-link pn-ProductNav_Link" href="#">Current Events</a><a class="nav-link pn-ProductNav_Link" href="#">Business & Work</a><a class="nav-link pn-ProductNav_Link" href="#">Fashion</a><a class="nav-link pn-ProductNav_Link" href="#">Film</a><a class="nav-link pn-ProductNav_Link" href="#">Health & Wellness</a><a class="nav-link pn-ProductNav_Link" href="#">Interiors</a><a class="nav-link pn-ProductNav_Link" href="#">Street Photography</a></div>
+            </nav>
+            <button class="pn-Advancer pn-Advancer_Left" id="pnAdvancerLeft" type="button"><svg width="24" height="24" class="_1A-eG" version="1.1" viewBox="0 0 32 32" aria-hidden="false"><path fill="#0F274D" d="M20.6667 24.6666l-2 2L8 16 18.6667 5.3333l2 2L12 16l8.6667 8.6666z"></path></svg></button>
+            <button class="pn-Advancer pn-Advancer_Right" id="pnAdvancerRight" type="button"><svg width="24" height="24" class="_1A-eG" version="1.1" viewBox="0 0 32 32" aria-hidden="false"><path fill="#0F274D" d="M11.3333 7.3333l2-2L24 16 13.3333 26.6666l-2-2L20 16l-8.6667-8.6667z"></path></svg></button>
+          </div>
         </div>
       </div>
       <!-- /.nav-scroller-->
-    </header>
+    </section>
     <!-- /header-->
     <div class="main">
       <article>
@@ -558,7 +571,7 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 col-lg-5 text-center pt-2">
-              <h3 class="text-primary mb-1"> <span class="me-2"><img src="/assets/images/icons/icon-send.svg"></span>Suscríbete a nuestro boletín</h3>
+              <h3 class="text-primary mb-1 fs-5 fw-normal"><span class="me-2"><img src="/assets/images/icons/icon-send.svg"></span>Suscríbete a nuestro boletín</h3>
               <p class="mb-2 text-muted">¡No te pierdas nunca una publicación!</p><a class="btn btn-outline-primary " href="">Suscribirme<span class="icon-modal ms-2"></span></a>
             </div>
           </div>
@@ -601,6 +614,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
     <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/taggd/4.0.0/taggd.min.js"></script>
     <script src="/assets/js/custom.js"></script>

@@ -47,6 +47,9 @@
 		}
 	}
 	&-repository-grid{
+		@media (max-width: $break-md) {
+			margin-bottom:0rem !important;
+		}
 		.card{
 			&-title{
 				font-size: $size-20;
@@ -95,6 +98,24 @@
 				}
 			}
 		}
+		.row{
+			@media (max-width: $break-md) {
+				div:last-child{
+					border-bottom:0 !important;
+				}
+			}
+
+		}
+	}
+	&-repository--tags{
+		@media (max-width: $break-md) {
+			padding-bottom: 0.1rem;
+		}
+	}
+	&-all-repository--tags {
+		@media (max-width: $break-md) {
+			padding-top: 1rem;
+		}
 	}
 	&-relacionadas{
 		.card{
@@ -122,6 +143,12 @@
 
 		}
 
+	}
+	&-pager{
+		@media (max-width: $break-md) {
+			padding-top: 0;
+			padding-bottom: 0;
+		}
 	}
 
 }

@@ -41,7 +41,10 @@
 .text-primary-gray{
 	color:var(--bs-gray-dark);
 }
-
+.fs-xs{
+	font-size: $size-13;
+	color:$color-negro-30 !important;
+}
 .btn-outline-primary {
     color:var(--bs-primary) !important;
     border-color:var(--bs-primary) !important;
