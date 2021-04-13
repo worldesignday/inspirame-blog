@@ -100,6 +100,8 @@ function determineOverflow(a, b) {
 
 //slider hero
 var swiper = new Swiper('.swiper-container-hero', {
+  slidesPerView: '1',
+  spaceBetween: 0,
   // Navigation arrows
   pagination: {
     el: '.swiper-pagination',
@@ -110,18 +112,18 @@ var swiper = new Swiper('.swiper-container-hero', {
     prevEl: '.swiper-button-prev',
   },
 
-  breakpoints: {
-    // when window width is >= 576px
-    0: {
-      slidesPerView: '1',
-      spaceBetween: 0
-    },
-    // when window width is >= 768px
-    567: {
-      slidesPerView: 'auto',
-      spaceBetween: 0,
-    },
-  },
+  //breakpoints: {
+  //  // when window width is >= 576px
+  //  0: {
+  //    slidesPerView: '1',
+  //    spaceBetween: 0
+  //  },
+  //  // when window width is >= 768px
+  //  567: {
+  //    slidesPerView: 'auto',
+  //    spaceBetween: 0,
+  //  },
+  //},
   // Disable preloading of all images
   preloadImages: false,
   // Enable lazy loading

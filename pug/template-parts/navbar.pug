@@ -9,8 +9,14 @@ header.bg-white.position-relative
 				button.btn-close.p-2(type='submit' class="p-0" data-bs-toggle="search")
 	nav.navbar.navbar-light
 		.container
-			a.navbar-brand(href='/')
-				img(src='/assets/images/icons/logo-corona-header.svg' alt='' width='70' height='70')
+			.d-flex.align-items-center
+				a.navbar-brand(href='/')
+					img(src='/assets/images/icons/logo-corona-header.svg' alt='' width='70' height='70')
+				picture
+					source(media="(min-width: 575.98px)" srcset="/assets/images/logo-inspirame.svg")
+					source(media="(max-width: 576px)" srcset="/assets/images/logo-inspirame-responsive.svg")
+					img(src="/assets/images/logo-inspirame.svg" alt="Logo inspirame" loading="lazy")
+
 			.d-flex
 				.navbar-tool.d-flex.me-2.me-ms-0.pe-sm-3.pe-0
 					a.pt-1( href="" data-bs-toggle="search")
